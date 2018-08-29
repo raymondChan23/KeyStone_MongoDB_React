@@ -1,0 +1,12 @@
+extends ../layouts/default
+
+block intro
+	.container
+		//- h1= section ? section : 'Blog'
+
+block content
+	.container
+		each val, index in data.announcements
+			p= index +'. '+ val
+			hr
+			
